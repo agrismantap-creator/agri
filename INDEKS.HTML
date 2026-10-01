@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI UNEIRA</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        /* HEADER */
+        header {
+            height: 75px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* LOGO */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        .logo h2 {
+            color: #003b73;
+            font-size: 22px;
+        }
+
+        .logo span {
+            color: #d71920;
+        }
+
+        /* MENU */
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #003b73;
+        }
+
+        /* HERO */
+        .hero {
+            height: calc(100vh - 75px);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(5, 1, 36, 0.85),
+                    rgba(5, 54, 158, 0.85)
+                ),
+                url("https://images.unsplash.com/photo-1562774053-701939374585")
+                center/cover;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #ffd700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+
+            background: #ffd700;
+            color: #003b73;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+
+            header {
+                padding: 10px 4%;
+            }
+
+            .logo img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .logo h2 {
+                font-size: 25px;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <img src="C:\Users\Win10\Desktop\logo uneira.jpeg" alt="Logo STI UNEIRA">
+
+            <h2>
+                STI <span>UNEIRA</span>
+            </h2>
+        </div>
+
+        <!-- 4 MENU -->
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#akademik">Akademik</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+
+        <div>
+
+            <h1>
+                Selamat Datang di
+                <span>STI UNEIRA</span>
+            </h1>
+
+            <p>
+                Sistem Teknologi Informasi
+                Universitas Halmahera
+            </p>
+
+            <a href="#profil" class="btn">
+                Lihat Profil
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
